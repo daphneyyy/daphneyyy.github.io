@@ -60,14 +60,10 @@ body.dark .project a:hover {
     color: var(--button-color-hover, red);
 }
 
-/* 
 @media screen and (max-width: 480px) {
     .project {
         flex-direction: column;
         padding-bottom: 20px;
-    }
-
-    .project-content {
         width: 100%;
         margin: 0;
         > h2 {
@@ -78,31 +74,12 @@ body.dark .project a:hover {
                 font-size: 15px;
             }
         }
-        > a {
-            font-size: 15px;
+        > div {
+            display: flex;
+            flex-direction: column;
+            > a {
+                font-size: 12px;
+            }
         }
     }
-
-    figure {
-        width: 100%;
-    }    
-
-    figure img {
-        height: 200px;
-        width: auto;
-    }
 }
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    figure img {
-        height: 250px;
-        width: auto;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    figure img {
-        height: 300px;
-        width: auto;
-    }
-} */
