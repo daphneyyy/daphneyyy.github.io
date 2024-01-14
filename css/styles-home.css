@@ -1,0 +1,71 @@
+@import "styles.css";
+
+header h1 {
+    padding-bottom: 0;
+}
+
+header h3 {
+    color: rgb(230, 230, 230);
+}
+
+.nav-home {
+    background-color: var(--button-color-hover, grey);
+    color: white;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.interests {
+    > ul {
+        list-style-type: none;
+        > li::before {
+            content: "\27a2";
+        }
+    }
+}
+
+.lead, .education, .location, .interests {
+    margin: 1rem;
+    text-align: left;
+}
+
+h2:has(+ hr) {
+    color: color-mix(in srgb, yellow 40%, green);
+}
+
+.lead {
+    > h2 {
+        text-align: center;
+        font-weight: bold;
+        font-style: italic  ;
+        color: rgb(232, 100, 48);
+        padding: 0.5rem 0;
+    }
+    > p {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 80%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+
+}

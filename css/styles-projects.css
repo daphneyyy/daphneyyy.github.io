@@ -1,0 +1,108 @@
+@import "styles.css";
+
+.nav-project {
+    background-color: var(--button-color-hover, grey);
+    color: white;
+    pointer-events: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 2rem;
+    > h2 {
+        font-size: 1.3rem;
+        color: color(display-p3 0.4 0.7 0.25);
+    }
+    > h2::after {
+        content: "";
+        display: block;
+        width: 30%;
+        height: 2px;
+        background-color: gray;
+        margin: 0.5rem 0;
+    }
+    > ul {
+        margin-bottom: 0.5rem;
+        > li {
+            font-size: 1.1rem;
+        }
+    }
+    > div {
+        > a {
+            text-align: center;
+            color: rgb(99, 21, 118);
+            font-weight: bold;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: underline wavy rgb(0, 174, 255) 2px;
+        }
+        > a:hover {
+            color: var(--button-color-hover, red);
+        }
+    }
+}
+
+body.dark .project a {
+    color: lightcyan;
+}
+
+body.dark .project a:hover {
+    color: var(--button-color-hover, red);
+}
+
+/* 
+@media screen and (max-width: 480px) {
+    .project {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .project-content {
+        width: 100%;
+        margin: 0;
+        > h2 {
+            font-size: 20px;
+        }
+        > ul {
+            > li {
+                font-size: 15px;
+            }
+        }
+        > a {
+            font-size: 15px;
+        }
+    }
+
+    figure {
+        width: 100%;
+    }    
+
+    figure img {
+        height: 200px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    figure img {
+        height: 250px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    figure img {
+        height: 300px;
+        width: auto;
+    }
+} */
