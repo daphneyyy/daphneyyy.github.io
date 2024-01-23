@@ -30,13 +30,65 @@ main {
     }
 }
 
-.lead, .education, .location, .interests {
+.lead, .lead-container, .education, .location, .interests {
     margin: 1rem;
     text-align: left;
 }
 
 h2:has(+ hr) {
     color: color-mix(in srgb, yellow 40%, green);
+}
+
+.lead-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides-container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.slides {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 .lead {
@@ -70,4 +122,23 @@ h2:has(+ hr) {
             font-size: 1rem;
         }
     }
+
+    .lead-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+.slides-container {
+    width: 225px;
+    height: 300px;
+}
+
+.slides {
+    width: 225px;
+    height: 300px;
+}
 }
