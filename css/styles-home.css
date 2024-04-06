@@ -130,15 +130,13 @@ h2:has(+ hr) {
         align-items: center;
     }
 
+    .slides-container {
+        width: 225px;
+        height: 300px;
+    }
 
-
-.slides-container {
-    width: 225px;
-    height: 300px;
-}
-
-.slides {
-    width: 225px;
-    height: 300px;
-}
+    .slides {
+        width: 225px;
+        height: 300px;
+    }
 }
