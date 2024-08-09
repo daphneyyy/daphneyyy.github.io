@@ -2,7 +2,7 @@
 
 :root {
     --bar-background-color: rgb(223, 236, 235);
-    --bar-color: rgb(27, 156, 135);
+    --bar-color: rgb(0, 122, 159);
 }
 
 .nav-about {
@@ -26,8 +26,12 @@
         > li {
             padding: 20px;
             > h4 {
-                font-size: 1.3rem;
+                /* font-size: 1.3rem; */
                 padding-bottom: 10px;
+                font-size: 1.5rem;
+                font-family: Blippo;
+                font-variant: small-caps;
+                color: rgb(17, 95, 189);
                 &::after {
                     content: "";
                     display: block;
@@ -38,7 +42,7 @@
                 }
             }
             > p {
-                font-size: 1.15rem;
+                font-size: 1.1rem;
                 padding-bottom: 10px;
             }
         }
@@ -47,11 +51,11 @@
 
 p:has(+ ul) {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .work-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     list-style-type: square;
     > li {
         margin: 0 30px;

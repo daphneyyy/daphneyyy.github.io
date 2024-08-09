@@ -33,6 +33,13 @@ main {
 .lead, .lead-container, .education, .location, .interests {
     margin: 1rem;
     text-align: left;
+
+    > h2 {
+        font-size: 1.5rem;
+        font-family: Blippo;
+        font-variant: small-caps;
+        color: rgb(17, 95, 189);
+    }
 }
 
 h2:has(+ hr) {
@@ -102,6 +109,7 @@ h2:has(+ hr) {
     > p {
         font-size: 1.3rem;
     }
+    margin-left: 3rem;
 }
 
 @media screen and (max-width: 480px) {
