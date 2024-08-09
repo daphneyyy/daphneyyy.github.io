@@ -163,12 +163,12 @@ button:hover {
 }
 
 body.dark {
-    background-color: #1a1a1a;
+    background-color: #1a1a1add;
     color: #fff;
 }
 
 body.dark footer {
-    background-color: rgb(80, 146, 139);
+    background-color: var(--button-color, grey);
     color: #fff;
 }
 
@@ -181,7 +181,23 @@ body.dark nav a {
 }
 
 body.dark nav a:hover {
-    background-color: rgb(55, 113, 88);
+    background-color: rgb(92, 194, 223)
+}
+
+body.dark .lead, .lead-container, .education, .location, .interests, .project {
+    h2 {
+        color: white;
+    }
+}
+
+body.dark .work {
+    ul {
+        li {
+            h4 {
+                color: white;
+            }
+        }
+    }
 }
 
 #mode {
