@@ -55,13 +55,71 @@ main {
     }
 }
 
-body.dark .project a {
-    color: lightcyan;
+.img-container {
+    position: relative;
+    display: inline-block;
+    > img {
+        height: 300px;
+        width: auto;
+        display: block;
+        border-radius: 5px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0); /* Initially transparent */
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
 }
 
-body.dark .project a:hover {
-    color: var(--button-color-hover, red);
+.img-container:hover {
+    .overlay {
+        background-color: rgba(255, 255, 255, 0.672);
+    }
+    .pj-container {
+        display: block;
+    }
 }
+
+.pj-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.pj {
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.pj a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+body.dark .project {
+        > h2 {
+            color: rgb(125, 174, 235);
+        }
+        .proj-links a {
+            color:rgb(46, 191, 157);
+        }
+    }
+
 
 @media screen and (max-width: 480px) {
     .project {

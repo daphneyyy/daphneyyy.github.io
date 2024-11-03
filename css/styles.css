@@ -1,9 +1,4 @@
 :root {
-    /* --main-color: rgb(178, 211, 207);
-    --body-color: rgb(247, 250, 251);
-    --button-color: rgb(90, 186, 113);
-    --fallback-button-color: rgb(171, 250, 189);
-    --button-color-hover: rgb(69, 142, 86); */
     --main-color: rgb(203, 231, 240);
     --body-color: rgb(247, 250, 251);
     --button-color: rgb(0, 122, 159);
@@ -184,9 +179,9 @@ body.dark nav a:hover {
     background-color: rgb(92, 194, 223)
 }
 
-body.dark .lead, .lead-container, .education, .location, .interests, .project {
+body.dark .lead, .lead-container {
     h2 {
-        color: white;
+        color: black;
     }
 }
 
